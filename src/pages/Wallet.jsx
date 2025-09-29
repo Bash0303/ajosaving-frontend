@@ -80,11 +80,6 @@ const Wallet = () => {
     }
   ]
 
-  const handleWithdraw = () => {
-    // Implement withdrawal logic here
-    console.log('Initiate withdrawal process')
-  }
-
   const handleExport = () => {
     // Implement export logic here
     console.log('Export transaction history')
@@ -289,7 +284,7 @@ const Wallet = () => {
           {/* Action Buttons */}
           <div className="flex space-x-3 mt-4">
             <button 
-              onClick={handleWithdraw}
+              onClick={() => navigate('/wallet/withdraw')}
               className="flex-1 bg-white text-deepBlue-600 py-3 rounded-xl font-semibold hover:bg-deepBlue-50 transition duration-200 flex items-center justify-center"
             >
               <ArrowUp className="w-5 h-5 mr-2" />

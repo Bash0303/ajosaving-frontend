@@ -10,6 +10,7 @@ import Payment from './pages/Payment'
 import Wallet from './pages/Wallet'
 import CreateGroup from './components/groups/CreateGroup'
 import JoinGroup from './components/groups/JoinGroup'
+import Withdraw from './components/wallet/Withdraw'
 
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
@@ -101,6 +102,14 @@ function App() {
               element={
                 <ProtectedRoute>
                   <Wallet />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/wallet/withdraw" 
+              element={
+                <ProtectedRoute>
+                  <Withdraw />
                 </ProtectedRoute>
               } 
             />
